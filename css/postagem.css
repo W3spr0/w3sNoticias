@@ -1,0 +1,45 @@
+.container{
+    padding: 10px 50px;
+    margin: 10px 50px;
+}
+.conteudo-lateral ul{
+    list-style: none;
+    background-color: white;
+    padding: 10px;
+    border: 1px gainsboro solid;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.conteudo{
+    width: 50%;
+    display: inline-block;
+    margin-left: 100px;
+}
+.container img{
+    max-width: 100%;
+}
+.conteudo-lateral{
+    display: block;
+    margin: 0px 100px 0px 0px;
+    width: 30%;
+    padding: 10px;
+    float: right;
+}
+.conteudo img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        padding: 0;
+        margin: 5px;
+    }
+    .conteudo{
+        width: auto;
+        margin: 20px;
+    }
+    .conteudo-lateral{
+        display: none;
+    }
+}

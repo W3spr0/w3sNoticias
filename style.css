@@ -9,6 +9,10 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container{
+    padding: 0 100px;
+}
+
 .noticias{
     display: inline-block;
     width: 50%;
@@ -25,13 +29,18 @@ body{
     font-size: 15px;
     font-weight: bold;
 }
-.postagem h2{
-    color:blue
+.postagem h2 a{
+    color:blue;
+    text-decoration: none;
+}
+
+.postagem h2 a:hover{
+    color: darkblue;
 }
 
 .postagem-img{
     display: inline-block;
-    width: auto;
+    width: 50%;
     height: auto;
     padding-right: 10px;
 }
@@ -65,10 +74,16 @@ body{
 .container-right ul{
     list-style: none;
     background-color: white;
-    padding: 10px;
-    border: 1px gainsboro solid;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-bottom: 10px;
+}
+.container-right li{
+    padding: 10px;
+}
+.container-right .img{
+    text-align: center;
+    border-top: 5px rgb(250, 250, 250) solid;
+    
 }
 
 .right-title{
@@ -76,19 +91,15 @@ body{
 }
 
 footer{
-    background-color: white;
+    font-weight: bold;
     bottom: 0;
     color: maroon;
-    text-align: center;
-    padding: 10px 0;
+    text-align: left;
+    padding: 10px;
+    margin: 20px;
     color: darkblue;
-    font-weight: bold;
-    border: 1px darkgray solid;
     border-radius: 1px;
-}
-footer img{
-    height: 10%;
-    width: 5%;
+    text-align: center;
 }
 @media screen and (max-width: 700px){
     .noticias{
@@ -102,5 +113,13 @@ footer img{
     .noticias{
         width: auto;
     }
-
+    .container{
+        padding: 1px;
+    }
+    footer{
+        position: relative;
+    }
+    .postagem-img{
+        width: 70%;
+    }
 }

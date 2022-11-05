@@ -1,11 +1,7 @@
-nav{
-    margin-bottom: 50px;
-}
+
 nav ul{
-    display: inline;
+    display: inline-block;
     background-color: darkblue;
-    position: fixed;
-    top: 0;
     width: 100%;
     height: 50px;
 }
@@ -39,10 +35,14 @@ nav ul li{
     nav ul{
         text-align: center;
         height: 10%;
+        display: inline;
+        position: fixed;
+        top: 0;
     }
     nav{
         margin-bottom: 5em;
     }
     nav img{
-        margin-left: 0; 
+        margin:0;
+    }
 }
