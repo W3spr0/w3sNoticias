@@ -43,5 +43,6 @@ nav ul li{
     nav{
         margin-bottom: 5em;
     }
-    
+    nav img{
+        margin-left: 0;
 }
